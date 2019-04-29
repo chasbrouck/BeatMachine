@@ -43,6 +43,9 @@ function play() {
   //every X seconds
   setInterval(function(){
 
+    //move marker
+    transtionMarker();
+
     //play noise
     console.log("play row " + currentRow);
     playRow(currentRow);
@@ -139,4 +142,9 @@ function updateInstrument(synth, rgb){
     synthE.setSampleRate(g);
     synthEDuration = b;
   }
+}
+
+function transtionMarker() {
+  var markerY = currentRow * 90;
+  $("#playMarker").css("transform","translate(0,"+markerY+"px)");
 }
