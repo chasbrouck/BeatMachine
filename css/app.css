@@ -1,0 +1,44 @@
+body {
+  background: #000000;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+
+#beatGrid {
+  width: 45%;
+}
+
+.beatRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.beatCell {
+  flex: 1;
+  max-width: 72px;
+  height: 72px;
+  margin: 4px;
+  cursor: crosshair;
+  border: 5px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+
+.clickThrough {
+  position: absolute;
+  z-index: 2;
+  width: 72px;
+  height: 72px;
+  pointer-events: none;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.iro__slider {
+  visibility: hidden;
+  pointer-events: none;
+}
