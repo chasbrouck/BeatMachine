@@ -1,14 +1,39 @@
 body {
+  margin: 0 !important;
   background: #000000;
 }
 
+.titleBlock {
+  width: fit-content;
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
+.title {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
 .content {
-  display: flex;
-  justify-content: space-around;
+  margin: 20px 20px;
 }
 
 #beatGrid {
   width: 45%;
+  margin: auto;
 }
 
 #playMarker {
@@ -49,4 +74,14 @@ body {
 .iro__slider {
   visibility: hidden;
   pointer-events: none;
+}
+
+.playButton {
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
 }
